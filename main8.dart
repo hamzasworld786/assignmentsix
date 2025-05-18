@@ -1,44 +1,35 @@
 main() {
-  // 1. Data Types
   int age = 20;
   double height = 5.9;
   String name = "Hamza";
   bool isStudent = true;
-  var city = "Lahore"; // Dart infers the type
-  dynamic anyValue = 123; // Can hold any type
+  var city = "Lahore";
+  dynamic anyValue = 123;
 
-  // 2. List
   List<int> numbers = [1, 2, 3];
   numbers.add(4);
-  print(numbers[0]); // Output: 1
-  print(numbers.length); // Output: 4
+  print(numbers[0]);
+  print(numbers.length);
 
-  // 3. Map
   Map<String, int> marks = {"Math": 90, "English": 85};
   marks["Science"] = 92;
-  print(marks["Math"]); // Output: 90
+  print(marks["Math"]);
 
-  // 4. Loops
-
-  // For Loop
   for (int i = 0; i < 5; i++) {
     print("For loop: $i");
   }
 
-  // While Loop
   int i = 0;
   while (i < 5) {
     print("While loop: $i");
     i++;
   }
 
-  // For-in Loop with List
   List<String> names = ["Ali", "Hamza", "Sara"];
   for (var name in names) {
     print("Hello $name");
   }
 
-  // 5. if-else
   int number = 10;
 
   if (number > 0) {
@@ -48,8 +39,6 @@ main() {
   } else {
     print("Negative");
   }
-
-  // 6. Functions
 
   int add(int a, int b) {
     return a + b;
@@ -63,9 +52,6 @@ main() {
     print("Hello $title $name");
   }
 
-  // ─── Self Task Examples ───
-
-  // 1. Grade using if-else
   int marksObtained = 78;
 
   if (marksObtained >= 80) {
@@ -78,7 +64,6 @@ main() {
     print("Fail");
   }
 
-  // 2. List sum and average
   List<int> nums = [10, 20, 30, 40];
   int sum = 0;
 
@@ -88,7 +73,6 @@ main() {
   double avg = sum / nums.length;
   print("Sum = $sum, Average = $avg");
 
-  // 3. Map of student scores > 80
   Map<String, int> studentScores = {"Ali": 88, "Hamza": 74, "Sara": 92};
 
   for (var entry in studentScores.entries) {
@@ -97,7 +81,6 @@ main() {
     }
   }
 
-  // 4. Even numbers from a list
   List<int> mixedNums = [5, 12, 7, 8, 3, 14];
   for (var n in mixedNums) {
     if (n % 2 == 0) {
@@ -105,7 +88,6 @@ main() {
     }
   }
 
-  // 5. Function to find max in list
   int findMax(List<int> list) {
     int max = list[0];
     for (var num in list) {
@@ -118,7 +100,6 @@ main() {
 
   print("Max number: ${findMax([5, 9, 12, 3, 7])}");
 
-  // 6. Function to find highest scoring subject
   String bestSubject(Map<String, int> subjectMarks) {
     String best = subjectMarks.keys.first;
     int highest = subjectMarks[best]!;
